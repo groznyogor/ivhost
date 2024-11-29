@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="none,noindex,nofollow">
+    <title>Domena zarejestrowana - IVhost</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @font-face {
+            font-display: swap;
+            font-family: Inter;
+            font-style: normal;
+            font-weight: 400;
+            src: url('https://path-to-your-font/Inter-Regular.woff2') format('woff2');
+        }
+        html {
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+        }
+    </style>
+</head>
+<body class="bg-neutral-900 text-white">
+<div class="relative overflow-hidden">
+    <svg class="absolute -bottom-20 start-1/2 w-[1900px] transform -translate-x-1/2" width="2745" height="488" viewBox="0 0 2745 488" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M0.5 330.864C232.505 403.801 853.749 527.683 1482.69 439.719C2111.63 351.756 2585.54 434.588 2743.87 487" class="stroke-neutral-700/50" stroke="currentColor"></path>
+    </svg>
+
+    <div class="relative z-10 min-h-screen flex items-center justify-center px-4">
+        <div class="w-full max-w-md bg-neutral-900 border border-neutral-700 rounded-xl p-6 md:p-8 text-center">
+            <div class="flex justify-center mb-6">
+                <div class="size-16 bg-emerald-300 rounded-full flex items-center justify-center">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 text-neutral-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" />
+                    </svg>
+                </div>
+            </div>
+
+            <h1 class="text-3xl md:text-4xl font-semibold mb-4">
+                Domena <span class="text-emerald-300">zarejestrowana</span>
+            </h1>
+
+            <p class="text-neutral-400 mb-4">
+                Gratulację! Twoja domena została zarejestrowana.
+            </p>
+
+            <div class="bg-neutral-800 p-4 rounded-xl mb-6">
+                <div id="hostname" class="text-white text-lg font-medium break-words">
+                    ładowanie...
+                </div>
+            </div>
+
+            <p class="text-neutral-400 text-sm mb-4">
+                Zasilane przez <a href="https://ivhost.pl" class="text-emerald-300 hover:underline">IVhost</a>.
+            </p>
+        </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById('hostname').textContent = window.location.hostname;
+</script>
+</body>
+</html>
